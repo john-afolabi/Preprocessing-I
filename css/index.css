@@ -221,3 +221,22 @@ section.work-history th {
 section.work-history tr:nth-child(even) {
   background-color: #dddddd;
 }
+section.contact {
+  padding: 20px 0;
+  text-align: center;
+}
+section.contact input[type=text],
+section.contact input[type=email],
+section.contact input[type=tel],
+section.contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid black;
+  font-family: inherit;
+}
+section.contact form {
+  margin-top: 15px;
+}
