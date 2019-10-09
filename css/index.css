@@ -135,14 +135,52 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+@font-face {
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Caveat Brush'), local('CaveatBrush-Regular'), url(https://fonts.gstatic.com/s/caveatbrush/v5/EYq0maZfwr9S9-ETZc3fKXt8XLOX.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+.section-border {
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1,
+h2 {
+  font-family: 'Caveat Brush', cursive;
+}
 h1 {
   font-size: 4rem;
 }
 h2 {
   font-size: 2.5rem;
 }
-p {
+p,
+table,
+ul,
+form,
+nav,
+button {
   font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
 }
 .main-container {
   max-width: 950px;
@@ -173,13 +211,14 @@ header nav a {
   padding: 40px;
   text-decoration: none;
   font-size: 1.6rem;
+  color: maroon;
 }
 @media (max-width: 500px) {
   header nav a {
     display: block;
     width: 95%;
     padding: 15px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid maroon;
     text-align: center;
   }
 }
@@ -187,12 +226,14 @@ header nav a {
   header nav {
     display: flex;
     justify-content: space-between;
-    width: 95%;
     padding: unset;
   }
 }
 @media (max-width: 500px) {
   header nav {
+    display: block;
+    width: 100%;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -211,6 +252,8 @@ header nav a {
 }
 section.intro {
   text-align: center;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
 }
 section.intro img {
   margin: 20px auto;
@@ -220,12 +263,15 @@ section.intro img {
 section.intro div {
   text-align: center;
 }
+section.intro div h1 {
+  color: maroon;
+}
 section.intro div p {
   font-size: 2rem;
 }
 section.intro button {
   background-color: #fff;
-  border: 1px solid black;
+  border: 1px solid maroon;
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
@@ -233,6 +279,8 @@ section.intro button {
 section.skills {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
 }
 section.skills div {
   width: calc(50% - 20px);
@@ -240,12 +288,14 @@ section.skills div {
 section.skills div ul li {
   font-size: 1.6rem;
   border: 1px solid gray;
-  padding: 5px;
+  padding: 4px 7px;
   border-radius: 5px;
+  margin: 10px 0;
 }
 section.skills div ul li:hover {
   padding-left: 15px;
   cursor: pointer;
+  border: 1px solid maroon;
 }
 @media (max-width: 500px) {
   section.skills div {
@@ -261,8 +311,13 @@ section.skills h2 {
     align-items: center;
   }
 }
+section.work-history {
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
 section.work-history h2 {
   margin: 20px 0;
+  text-align: center;
 }
 section.work-history table {
   font-size: 1.6rem;
@@ -274,10 +329,13 @@ section.work-history th {
   padding: 10px 5px;
 }
 section.work-history tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: maroon;
+  color: white;
 }
 section.contact {
   text-align: center;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
 }
 section.contact input[type=text],
 section.contact input[type=email],
@@ -288,7 +346,7 @@ section.contact textarea {
   margin: 10px 0;
   border-radius: 5px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid maroon;
   font-family: inherit;
 }
 section.contact form {

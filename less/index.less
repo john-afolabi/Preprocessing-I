@@ -58,7 +58,37 @@ html, body {
 	font-size: 62.5%
 }
 
+// Import google fonts
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+// Variable
+
+@main-color: maroon;
+@header-font: 'Caveat Brush', cursive;
+@text-font: 'Lato', sans-serif;
+
+
+// Mixins
+.section-border {
+	border-bottom: 1px solid maroon;
+	padding: 40px 0;
+}
+
+.flex-row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 // General
+h1, h2 {
+	font-family: @header-font;
+}
 
 h1 {
 	font-size: 4rem;
@@ -68,8 +98,10 @@ h2 {
 	font-size: 2.5rem;
 }
 
-p {
+p, table, ul, form, nav, button {
 	font-size: 1.6rem;
+	font-family: @text-font;
+	line-height: 1.5;
 }
 
 
@@ -95,8 +127,7 @@ p {
 // Header 
 
 header {
-	display: flex;
-	justify-content: space-between;
+	.flex-row();
 	margin-top: 25px;
 	nav {
 		align-content: center;
@@ -104,24 +135,23 @@ header {
 			padding: 40px;
 			text-decoration: none;
 			font-size: 1.6rem;
-
+			color: @main-color;
 			@media (max-width: 500px){
 				display: block;
 				width: 95%;
 				padding: 15px 0;
-				border-bottom: 1px solid black;
+				border-bottom: 1px solid @main-color;
 				text-align: center;
 			}
 		}
 		@media (max-width: 800px){
-			display: flex;
-			justify-content: space-between;
-			width: 95%;
+			.flex-row();
 			padding: unset;
 		}
 		@media (max-width: 500px){
-			flex-direction: column;
-			align-items: center;
+			display: block;
+			width: 100%;
+			.flex-column()
 		}
 	}
 
@@ -147,6 +177,9 @@ section.intro {
 		border-radius: 125px;
 	}
 	div {
+		h1 {
+			color: @main-color;
+		}
 		text-align: center;
 		p {
 			font-size: 2rem;
@@ -154,29 +187,32 @@ section.intro {
 	}
 	button {
 		background-color: #fff;
-		border: 1px solid black;
+		border: 1px solid @main-color;
 		border-radius: 5px;
 		padding: 10px 40px;
 		margin: 15px auto;
 	}
+
+	.section-border();
 }
 
 // Skills
 
 section.skills {
-	display: flex;
-	justify-content: space-between;
+	.flex-row();
 	div {
 		width: calc(50% - 20px);
 		ul li {
 			font-size: 1.6rem;
 			border: 1px solid gray;
-			padding: 5px;
+			padding: 4px 7px;
 			border-radius: 5px;
+			margin: 10px 0;
 		}
 		ul li:hover {
 			padding-left: 15px;
 			cursor: pointer;
+			border: 1px solid @main-color;
 		}
 
 		@media (max-width: 500px){
@@ -191,6 +227,8 @@ section.skills {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.section-border();
 }
 
 // Work History 
@@ -198,6 +236,7 @@ section.skills {
 section.work-history {
 	h2 {
 		margin: 20px 0;
+		text-align: center;
 	}
 	table {
 		font-size: 1.6rem;
@@ -208,8 +247,11 @@ section.work-history {
 		padding: 10px 5px;
 	}
 	tr:nth-child(even) {
-		background-color: #dddddd;
+		background-color: @main-color;
+		color: white;
 	}
+
+	.section-border();
 }
 
 // Contact
@@ -222,10 +264,12 @@ section.contact {
 		margin: 10px 0;
 		border-radius: 5px;
 		background-color: white;
-		border: 1px solid black;
+		border: 1px solid @main-color;
 		font-family: inherit;
 	}
 	form {
 		margin-top: 15px;
 	}
+
+	.section-border();
 }
