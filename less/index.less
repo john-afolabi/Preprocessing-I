@@ -324,6 +324,7 @@ p, table, ul, form, nav, button, a {
 			}
 		}
 		.section-border();
+		border-bottom: 2px solid @main-color;
 	}
 
 	@media (max-width: 800px){
@@ -334,6 +335,15 @@ p, table, ul, form, nav, button, a {
 	@media (max-width: 500px){
 		max-width: 500px;
 		margin: auto;
+	}
+	
+	footer {
+		text-align: center;
+		background-color: @main-color;
+		p {
+			color: white;
+			padding: 20px;
+		}
 	}
 }
 

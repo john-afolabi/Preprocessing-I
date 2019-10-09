@@ -354,6 +354,7 @@ a {
   text-align: center;
   border-bottom: 1px solid maroon;
   padding: 40px 0;
+  border-bottom: 2px solid maroon;
 }
 .main-container section.contact input[type=text],
 .main-container section.contact input[type=email],
@@ -435,4 +436,12 @@ a {
     max-width: 500px;
     margin: auto;
   }
+}
+.main-container footer {
+  text-align: center;
+  background-color: maroon;
+}
+.main-container footer p {
+  color: white;
+  padding: 20px;
 }
