@@ -192,6 +192,194 @@ a {
   margin: auto;
   padding: 0 20px;
 }
+.main-container header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.main-container header nav {
+  align-content: center;
+}
+.main-container header nav a {
+  padding: 40px;
+  color: maroon;
+}
+@media (max-width: 500px) {
+  .main-container header nav a {
+    display: block;
+    width: 95%;
+    padding: 15px 0;
+    border-bottom: 1px solid maroon;
+    text-align: center;
+  }
+}
+@media (max-width: 800px) {
+  .main-container header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: unset;
+  }
+}
+@media (max-width: 500px) {
+  .main-container header nav {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .main-container header {
+    flex-flow: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .main-container header {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+}
+.main-container section.intro {
+  text-align: center;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
+.main-container section.intro img {
+  margin: 20px auto;
+  height: 250px;
+  border-radius: 125px;
+}
+.main-container section.intro div {
+  text-align: center;
+}
+.main-container section.intro div h1 {
+  color: maroon;
+}
+.main-container section.intro div p {
+  font-size: 2rem;
+}
+.main-container section.intro button {
+  background-color: #fff;
+  border: 1px solid maroon;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 15px auto;
+}
+.main-container section.skills {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
+.main-container section.skills div {
+  width: calc(50% - 20px);
+}
+.main-container section.skills div ul li {
+  font-size: 1.6rem;
+  border: 1px solid gray;
+  padding: 4px 7px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.main-container section.skills div ul li:hover {
+  padding-left: 15px;
+  cursor: pointer;
+  border: 1px solid maroon;
+}
+@media (max-width: 500px) {
+  .main-container section.skills div {
+    width: 100%;
+  }
+}
+.main-container section.skills h2 {
+  margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .main-container section.skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-container section.work-history {
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
+.main-container section.work-history h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+.main-container section.work-history table {
+  font-size: 1.6rem;
+  width: 100%;
+}
+.main-container section.work-history td,
+.main-container section.work-history th {
+  text-align: left;
+  padding: 10px 5px;
+}
+.main-container section.work-history tr:nth-child(even) {
+  background-color: maroon;
+  color: white;
+}
+.main-container section.contact {
+  text-align: center;
+  border-bottom: 1px solid maroon;
+  padding: 40px 0;
+}
+.main-container section.contact input[type=text],
+.main-container section.contact input[type=email],
+.main-container section.contact input[type=tel],
+.main-container section.contact textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid maroon;
+  font-family: inherit;
+}
+.main-container section.contact form {
+  margin-top: 15px;
+}
+.main-container section.contact .contact-details {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.main-container section.contact .contact-details div {
+  width: 20%;
+  margin-top: 25px;
+  text-align: left;
+}
+.main-container section.contact .contact-details div p {
+  font-weight: 800;
+}
+.main-container section.contact .contact-details div a {
+  color: maroon;
+}
+@media (max-width: 800px) {
+  .main-container section.contact .contact-details div {
+    text-align: center;
+    width: unset;
+  }
+}
+.main-container section.contact .contact-details form {
+  width: 70%;
+}
+@media (max-width: 800px) {
+  .main-container section.contact .contact-details form {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .main-container section.contact .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 800px) {
   .main-container {
     max-width: 800px;
@@ -202,193 +390,5 @@ a {
   .main-container {
     max-width: 500px;
     margin: auto;
-  }
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
-}
-header nav {
-  align-content: center;
-}
-header nav a {
-  padding: 40px;
-  color: maroon;
-}
-@media (max-width: 500px) {
-  header nav a {
-    display: block;
-    width: 95%;
-    padding: 15px 0;
-    border-bottom: 1px solid maroon;
-    text-align: center;
-  }
-}
-@media (max-width: 800px) {
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    padding: unset;
-  }
-}
-@media (max-width: 500px) {
-  header nav {
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media (max-width: 800px) {
-  header {
-    flex-flow: column;
-    align-items: center;
-  }
-}
-@media (max-width: 500px) {
-  header {
-    max-width: 500px;
-    margin-top: 20px;
-  }
-}
-section.intro {
-  text-align: center;
-  border-bottom: 1px solid maroon;
-  padding: 40px 0;
-}
-section.intro img {
-  margin: 20px auto;
-  height: 250px;
-  border-radius: 125px;
-}
-section.intro div {
-  text-align: center;
-}
-section.intro div h1 {
-  color: maroon;
-}
-section.intro div p {
-  font-size: 2rem;
-}
-section.intro button {
-  background-color: #fff;
-  border: 1px solid maroon;
-  border-radius: 5px;
-  padding: 10px 40px;
-  margin: 15px auto;
-}
-section.skills {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid maroon;
-  padding: 40px 0;
-}
-section.skills div {
-  width: calc(50% - 20px);
-}
-section.skills div ul li {
-  font-size: 1.6rem;
-  border: 1px solid gray;
-  padding: 4px 7px;
-  border-radius: 5px;
-  margin: 10px 0;
-}
-section.skills div ul li:hover {
-  padding-left: 15px;
-  cursor: pointer;
-  border: 1px solid maroon;
-}
-@media (max-width: 500px) {
-  section.skills div {
-    width: 100%;
-  }
-}
-section.skills h2 {
-  margin: 20px 0;
-}
-@media (max-width: 500px) {
-  section.skills {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-section.work-history {
-  border-bottom: 1px solid maroon;
-  padding: 40px 0;
-}
-section.work-history h2 {
-  margin: 20px 0;
-  text-align: center;
-}
-section.work-history table {
-  font-size: 1.6rem;
-  width: 100%;
-}
-section.work-history td,
-section.work-history th {
-  text-align: left;
-  padding: 10px 5px;
-}
-section.work-history tr:nth-child(even) {
-  background-color: maroon;
-  color: white;
-}
-section.contact {
-  text-align: center;
-  border-bottom: 1px solid maroon;
-  padding: 40px 0;
-}
-section.contact input[type=text],
-section.contact input[type=email],
-section.contact input[type=tel],
-section.contact textarea {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  background-color: white;
-  border: 1px solid maroon;
-  font-family: inherit;
-}
-section.contact form {
-  margin-top: 15px;
-}
-section.contact .contact-details {
-  display: flex;
-  justify-content: space-between;
-  justify-content: space-evenly;
-}
-section.contact .contact-details div {
-  width: 20%;
-  margin-top: 25px;
-  text-align: left;
-}
-section.contact .contact-details div p {
-  font-weight: 800;
-}
-section.contact .contact-details div a {
-  color: maroon;
-}
-@media (max-width: 800px) {
-  section.contact .contact-details div {
-    text-align: center;
-    width: unset;
-  }
-}
-section.contact .contact-details form {
-  width: 70%;
-}
-@media (max-width: 800px) {
-  section.contact .contact-details form {
-    width: 100%;
-  }
-}
-@media (max-width: 800px) {
-  section.contact .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
