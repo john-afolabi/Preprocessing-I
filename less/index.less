@@ -71,7 +71,7 @@ html, body {
 
 // Mixins
 .section-border {
-	border-bottom: 1px solid maroon;
+	border-bottom: 1px solid @main-color;
 	padding: 40px 0;
 }
 
@@ -180,11 +180,19 @@ p, table, ul, form, nav, button, a {
 		}
 		button {
 			background-color: #fff;
-			border: 1px solid @main-color;
+			border: 2px solid @main-color;
 			border-radius: 5px;
 			padding: 10px 40px;
 			margin: 15px auto;
 		}
+
+		button:hover {
+			background-color: @main-color;
+			border: none;
+			color: white;
+			cursor: pointer;
+		}
+		
 
 		.section-border();
 	}
@@ -197,6 +205,8 @@ p, table, ul, form, nav, button, a {
 			.width-50();
 			ul li {
 				font-size: 1.6rem;
+				background-color: @main-color;
+				color: white;
 				border: 1px solid gray;
 				padding: 4px 7px;
 				border-radius: 5px;
@@ -206,6 +216,8 @@ p, table, ul, form, nav, button, a {
 				padding-left: 15px;
 				cursor: pointer;
 				border: 1px solid @main-color;
+				background-color: white;
+				color: @main-color;
 			}
 
 			@media (max-width: 500px){

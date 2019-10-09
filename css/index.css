@@ -262,10 +262,16 @@ a {
 }
 .main-container section.intro button {
   background-color: #fff;
-  border: 1px solid maroon;
+  border: 2px solid maroon;
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
+}
+.main-container section.intro button:hover {
+  background-color: maroon;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 .main-container section.skills {
   display: flex;
@@ -278,6 +284,8 @@ a {
 }
 .main-container section.skills div ul li {
   font-size: 1.6rem;
+  background-color: maroon;
+  color: white;
   border: 1px solid gray;
   padding: 4px 7px;
   border-radius: 5px;
@@ -287,6 +295,8 @@ a {
   padding-left: 15px;
   cursor: pointer;
   border: 1px solid maroon;
+  background-color: white;
+  color: maroon;
 }
 @media (max-width: 500px) {
   .main-container section.skills div {
