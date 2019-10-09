@@ -135,6 +135,15 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+p {
+  font-size: 1.6rem;
+}
 .main-container {
   width: 900px;
   margin: auto;
@@ -143,9 +152,6 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
-}
-header h2 {
-  font-size: 2.5rem;
 }
 header nav {
   align-content: center;
@@ -166,9 +172,6 @@ section.intro img {
 section.intro div {
   text-align: center;
 }
-section.intro div h1 {
-  font-size: 4rem;
-}
 section.intro div p {
   font-size: 2rem;
 }
@@ -178,4 +181,24 @@ section.intro button {
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
+}
+section.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+section.skills div {
+  width: calc(50% - 20px);
+}
+section.skills div ul li {
+  font-size: 1.6rem;
+  border: 1px solid gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+section.skills div ul li:hover {
+  padding-left: 15px;
+}
+section.skills h2 {
+  margin: 20px 0;
 }
