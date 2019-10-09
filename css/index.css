@@ -147,6 +147,7 @@ p {
 .main-container {
   width: 900px;
   margin: auto;
+  padding: 0 20px;
 }
 header {
   display: flex;
@@ -185,7 +186,6 @@ section.intro button {
 section.skills {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
 }
 section.skills div {
   width: calc(50% - 20px);
@@ -203,9 +203,6 @@ section.skills div ul li:hover {
 section.skills h2 {
   margin: 20px 0;
 }
-section.work-history {
-  padding: 20px;
-}
 section.work-history h2 {
   margin: 20px 0;
 }
@@ -222,7 +219,6 @@ section.work-history tr:nth-child(even) {
   background-color: #dddddd;
 }
 section.contact {
-  padding: 20px 0;
   text-align: center;
 }
 section.contact input[type=text],
