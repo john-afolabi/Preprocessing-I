@@ -133,6 +133,7 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
 }
 .main-container {
   width: 900px;
@@ -144,7 +145,7 @@ header {
   margin-top: 25px;
 }
 header h2 {
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 header nav {
   align-content: center;
@@ -152,6 +153,7 @@ header nav {
 header nav a {
   padding: 20px;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 section.intro {
   text-align: center;
@@ -165,10 +167,10 @@ section.intro div {
   text-align: center;
 }
 section.intro div h1 {
-  font-size: 40px;
+  font-size: 4rem;
 }
 section.intro div p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 section.intro button {
   background-color: #fff;
