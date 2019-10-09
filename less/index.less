@@ -77,9 +77,19 @@ p {
 // Container 
 
 .main-container {
-	width: 900px;
+	max-width: 950px;
 	margin: auto;
 	padding: 0 20px;
+
+	@media (max-width: 800px){
+		max-width: 800px;
+		margin: auto;
+	}
+
+	@media (max-width: 500px){
+		max-width: 500px;
+		margin: auto;
+	}
 }
 
 // Header 
@@ -91,11 +101,40 @@ header {
 	nav {
 		align-content: center;
 		a {
-			padding: 20px;
+			padding: 40px;
 			text-decoration: none;
 			font-size: 1.6rem;
+
+			@media (max-width: 500px){
+				display: block;
+				width: 95%;
+				padding: 15px 0;
+				border-bottom: 1px solid black;
+				text-align: center;
+			}
+		}
+		@media (max-width: 800px){
+			display: flex;
+			justify-content: space-between;
+			width: 95%;
+			padding: unset;
+		}
+		@media (max-width: 500px){
+			flex-direction: column;
+			align-items: center;
 		}
 	}
+
+	@media (max-width: 800px){
+		flex-flow: column;
+		align-items: center;
+	}
+
+	@media (max-width: 500px){
+		max-width: 500px;
+		margin-top: 20px;
+	}
+
 }
 
 // Intro Section 
@@ -139,9 +178,18 @@ section.skills {
 			padding-left: 15px;
 			cursor: pointer;
 		}
+
+		@media (max-width: 500px){
+			width: 100%;
+		}
 	}
 	h2 {
 		margin: 20px 0;
+	}
+
+	@media (max-width: 500px){
+		flex-direction: column;
+		align-items: center;
 	}
 }
 
