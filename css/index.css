@@ -153,3 +153,27 @@ header nav a {
   padding: 20px;
   text-decoration: none;
 }
+section.intro {
+  text-align: center;
+}
+section.intro img {
+  margin: 20px auto;
+  height: 250px;
+  border-radius: 125px;
+}
+section.intro div {
+  text-align: center;
+}
+section.intro div h1 {
+  font-size: 40px;
+}
+section.intro div p {
+  font-size: 20px;
+}
+section.intro button {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 15px auto;
+}
