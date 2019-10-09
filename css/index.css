@@ -198,7 +198,26 @@ section.skills div ul li {
 }
 section.skills div ul li:hover {
   padding-left: 15px;
+  cursor: pointer;
 }
 section.skills h2 {
   margin: 20px 0;
+}
+section.work-history {
+  padding: 20px;
+}
+section.work-history h2 {
+  margin: 20px 0;
+}
+section.work-history table {
+  font-size: 1.6rem;
+  width: 100%;
+}
+section.work-history td,
+section.work-history th {
+  text-align: left;
+  padding: 10px 5px;
+}
+section.work-history tr:nth-child(even) {
+  background-color: #dddddd;
 }
