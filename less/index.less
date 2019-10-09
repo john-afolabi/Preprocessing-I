@@ -90,6 +90,22 @@ html, body {
 	width: calc(50% - 20px)
 }
 
+.botton-style {
+	background-color: #fff;
+	border: 2px solid @main-color;
+	border-radius: 5px;
+	padding: 10px 40px;
+	margin: 15px auto;
+
+		&:hover {
+			background-color: @main-color;
+			border: none;
+			color: white;
+			cursor: pointer;
+		}
+}
+
+
 // General
 h1, h2 {
 	font-family: @header-font;
@@ -127,7 +143,7 @@ p, table, ul, form, nav, button, a {
 		nav {
 			align-content: center;
 			a {
-				padding: 40px;
+				padding: 40px 40px;
 				color: @main-color;
 				@media (max-width: 500px){
 					display: block;
@@ -137,9 +153,13 @@ p, table, ul, form, nav, button, a {
 					text-align: center;
 				}
 			}
+			a:hover {
+				background-color: @main-color;
+				color: white;
+			}
 			@media (max-width: 800px){
 				.flex-row();
-				padding: unset;
+				margin-top: 10px;
 			}
 			@media (max-width: 500px){
 				display: block;
@@ -179,18 +199,7 @@ p, table, ul, form, nav, button, a {
 			}
 		}
 		button {
-			background-color: #fff;
-			border: 2px solid @main-color;
-			border-radius: 5px;
-			padding: 10px 40px;
-			margin: 15px auto;
-		}
-
-		button:hover {
-			background-color: @main-color;
-			border: none;
-			color: white;
-			cursor: pointer;
+			.botton-style();
 		}
 		
 
@@ -271,6 +280,14 @@ p, table, ul, form, nav, button, a {
 			background-color: white;
 			border: 1px solid @main-color;
 			font-family: inherit;
+		}
+
+		input[type=submit] {
+			.botton-style();
+			width: 80%;
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			letter-spacing: 2px;
 		}
 		form {
 			margin-top: 15px;

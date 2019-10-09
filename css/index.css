@@ -165,6 +165,19 @@ body {
 .width-50 {
   width: calc(50% - 20px);
 }
+.botton-style {
+  background-color: #fff;
+  border: 2px solid maroon;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 15px auto;
+}
+.botton-style:hover {
+  background-color: maroon;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 h1,
 h2 {
   font-family: 'Caveat Brush', cursive;
@@ -201,7 +214,7 @@ a {
   align-content: center;
 }
 .main-container header nav a {
-  padding: 40px;
+  padding: 40px 40px;
   color: maroon;
 }
 @media (max-width: 500px) {
@@ -213,11 +226,15 @@ a {
     text-align: center;
   }
 }
+.main-container header nav a:hover {
+  background-color: maroon;
+  color: white;
+}
 @media (max-width: 800px) {
   .main-container header nav {
     display: flex;
     justify-content: space-between;
-    padding: unset;
+    margin-top: 10px;
   }
 }
 @media (max-width: 500px) {
@@ -349,6 +366,23 @@ a {
   background-color: white;
   border: 1px solid maroon;
   font-family: inherit;
+}
+.main-container section.contact input[type=submit] {
+  background-color: #fff;
+  border: 2px solid maroon;
+  border-radius: 5px;
+  padding: 10px 40px;
+  margin: 15px auto;
+  width: 80%;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.main-container section.contact input[type=submit]:hover {
+  background-color: maroon;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 .main-container section.contact form {
   margin-top: 15px;
