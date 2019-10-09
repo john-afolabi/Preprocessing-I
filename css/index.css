@@ -162,6 +162,9 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.width-50 {
+  width: calc(50% - 20px);
+}
 h1,
 h2 {
   font-family: 'Caveat Brush', cursive;
@@ -177,10 +180,12 @@ table,
 ul,
 form,
 nav,
-button {
+button,
+a {
   font-size: 1.6rem;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
+  text-decoration: none;
 }
 .main-container {
   max-width: 950px;
@@ -209,8 +214,6 @@ header nav {
 }
 header nav a {
   padding: 40px;
-  text-decoration: none;
-  font-size: 1.6rem;
   color: maroon;
 }
 @media (max-width: 500px) {
@@ -351,4 +354,41 @@ section.contact textarea {
 }
 section.contact form {
   margin-top: 15px;
+}
+section.contact .contact-details {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+section.contact .contact-details div {
+  width: 20%;
+  margin-top: 25px;
+  text-align: left;
+}
+section.contact .contact-details div p {
+  font-weight: 800;
+}
+section.contact .contact-details div a {
+  color: maroon;
+}
+@media (max-width: 800px) {
+  section.contact .contact-details div {
+    text-align: center;
+    width: unset;
+  }
+}
+section.contact .contact-details form {
+  width: 70%;
+}
+@media (max-width: 800px) {
+  section.contact .contact-details form {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  section.contact .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
