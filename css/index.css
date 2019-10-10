@@ -150,7 +150,7 @@ body {
   src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
 }
 .section-border {
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid royalblue;
   padding: 40px 0;
 }
 .flex-row {
@@ -167,13 +167,13 @@ body {
 }
 .botton-style {
   background-color: #fff;
-  border: 2px solid maroon;
+  border: 2px solid royalblue;
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
 }
 .botton-style:hover {
-  background-color: maroon;
+  background-color: royalblue;
   border: none;
   color: white;
   cursor: pointer;
@@ -215,19 +215,19 @@ a {
 }
 .main-container header nav a {
   padding: 40px 40px;
-  color: maroon;
+  color: royalblue;
 }
 @media (max-width: 500px) {
   .main-container header nav a {
     display: block;
     width: 95%;
     padding: 15px 0;
-    border-bottom: 1px solid maroon;
+    border-bottom: 1px solid royalblue;
     text-align: center;
   }
 }
 .main-container header nav a:hover {
-  background-color: maroon;
+  background-color: royalblue;
   color: white;
 }
 @media (max-width: 800px) {
@@ -260,7 +260,7 @@ a {
 }
 .main-container section.intro {
   text-align: center;
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid royalblue;
   padding: 40px 0;
 }
 .main-container section.intro img {
@@ -272,20 +272,20 @@ a {
   text-align: center;
 }
 .main-container section.intro div h1 {
-  color: maroon;
+  color: royalblue;
 }
 .main-container section.intro div p {
   font-size: 2rem;
 }
 .main-container section.intro button {
   background-color: #fff;
-  border: 2px solid maroon;
+  border: 2px solid royalblue;
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
 }
 .main-container section.intro button:hover {
-  background-color: maroon;
+  background-color: royalblue;
   border: none;
   color: white;
   cursor: pointer;
@@ -293,7 +293,7 @@ a {
 .main-container section.skills {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid royalblue;
   padding: 40px 0;
 }
 .main-container section.skills div {
@@ -301,7 +301,7 @@ a {
 }
 .main-container section.skills div ul li {
   font-size: 1.6rem;
-  background-color: maroon;
+  background-color: royalblue;
   color: white;
   border: 1px solid gray;
   padding: 4px 7px;
@@ -311,9 +311,9 @@ a {
 .main-container section.skills div ul li:hover {
   padding-left: 15px;
   cursor: pointer;
-  border: 1px solid maroon;
+  border: 1px solid royalblue;
   background-color: white;
-  color: maroon;
+  color: royalblue;
 }
 @media (max-width: 500px) {
   .main-container section.skills div {
@@ -330,7 +330,7 @@ a {
   }
 }
 .main-container section.work-history {
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid royalblue;
   padding: 40px 0;
 }
 .main-container section.work-history h2 {
@@ -347,14 +347,14 @@ a {
   padding: 10px 5px;
 }
 .main-container section.work-history tr:nth-child(even) {
-  background-color: maroon;
+  background-color: royalblue;
   color: white;
 }
 .main-container section.contact {
   text-align: center;
-  border-bottom: 1px solid maroon;
+  border-bottom: 1px solid royalblue;
   padding: 40px 0;
-  border-bottom: 2px solid maroon;
+  border-bottom: 2px solid royalblue;
 }
 .main-container section.contact input[type=text],
 .main-container section.contact input[type=email],
@@ -365,12 +365,12 @@ a {
   margin: 10px 0;
   border-radius: 5px;
   background-color: white;
-  border: 1px solid maroon;
+  border: 1px solid royalblue;
   font-family: inherit;
 }
 .main-container section.contact input[type=submit] {
   background-color: #fff;
-  border: 2px solid maroon;
+  border: 2px solid royalblue;
   border-radius: 5px;
   padding: 10px 40px;
   margin: 15px auto;
@@ -380,7 +380,7 @@ a {
   letter-spacing: 2px;
 }
 .main-container section.contact input[type=submit]:hover {
-  background-color: maroon;
+  background-color: royalblue;
   border: none;
   color: white;
   cursor: pointer;
@@ -402,7 +402,7 @@ a {
   font-weight: 800;
 }
 .main-container section.contact .contact-details div a {
-  color: maroon;
+  color: royalblue;
 }
 @media (max-width: 800px) {
   .main-container section.contact .contact-details div {
@@ -439,7 +439,7 @@ a {
 }
 .main-container footer {
   text-align: center;
-  background-color: maroon;
+  background-color: royalblue;
 }
 .main-container footer p {
   color: white;
