@@ -1,61 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Afolabi Resume</title>
 
-  <title>John Afolabi Resume</title>
+    <link rel="stylesheet" href="css/index.css" />
 
-  <link rel="stylesheet" href="css/index.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+  <body>
+    <div class="main-container">
+      <header>
+        <h2>John Afolabi</h2>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+        </nav>
+      </header>
+      <section class="intro">
+        <img src="images/intro.jpg" alt="john afolabi" />
+        <div class="intro-text">
+          <h1>John Afolabi</h1>
+          <p>Web Developer</p>
+        </div>
+        <a href="#contact"><button>Let's Work Together</button></a>
+      </section>
 
-<body>
-  <div class="main-container">
-    <header>
-      <h2>John Afolabi</h2>
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-      </nav>
-    </header>
-    <section class="intro">
-      <img src="images/intro.jpg" alt="john afolabi">
-      <div class="intro-text">
-        <h1>John Afolabi</h1>
-        <p>Web Developer</p>
-      </div>
-      <a href="#contact"><button>Let's Work Together</button></a>
-    </section>
+      <section class="skills">
+        <div class="skills-text">
+          <h2>Listen Up...</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            risus turpis, interdum in justo vel, lobortis mollis felis. Praesent
+            suscipit turpis id arcu suscipit, ut faucibus arcu fringilla.
+            Suspendisse egestas interdum leo id congue. Ut aliquet id tellus
+            congue dapibus. Donec fermentum porta ornare. Vivamus nec accumsan
+            neque. Aliquam erat volutpat. Aenean egestas, mauris id mattis
+            semper, erat libero facilisis turpis, sed finibus orci leo non
+            turpis.
+          </p>
+        </div>
 
-    <section class="skills">
-      <div class="skills-text">
-        <h2>Listen Up...</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum risus turpis, interdum in justo vel, lobortis mollis felis. Praesent suscipit turpis id arcu suscipit, ut faucibus arcu fringilla. Suspendisse egestas interdum leo id congue. Ut aliquet id tellus congue dapibus. Donec fermentum porta ornare. Vivamus nec accumsan neque. Aliquam erat volutpat. Aenean egestas, mauris id mattis semper, erat libero facilisis turpis, sed finibus orci leo non turpis.
-        </p>
-      </div>
-      
-      <div class="skills-list">
-        <h2>What I am good at...</h2>
-        <ul>
-          <li>Web Development</li>
-          <li>Data Vistualization</li>
-          <li>Data Analytics</li>
-          <li>SEO</li>
-          <li>Digital Marketing</li>
-        </ul>
-      </div>
-    </section>
+        <div class="skills-list">
+          <h2>What I am good at...</h2>
+          <ul>
+            <li>Web Development</li>
+            <li>Data Vistualization</li>
+            <li>Data Analytics</li>
+            <li>SEO</li>
+            <li>Digital Marketing</li>
+          </ul>
+        </div>
+      </section>
 
-    <section class="work-history">
-      <h2>Work History</h2>
-      <table>
+      <section class="work-history">
+        <h2>Work History</h2>
+        <table>
           <tr>
             <th>Years</th>
             <th>Company</th>
@@ -72,32 +79,40 @@
             <td>Creative/Web Designer Intern</td>
           </tr>
         </table>
-    </section>
+      </section>
 
-    <section class="contact" id="contact">
-      <h2>Reach out to me...</h2>
-      <div class="contact-details">
-        <div>
-          <p>Email Address: </p><a href="mailto:johnafolabi.da@gmail.com">johnafolabi.da@gmail.com</a>
-          <br>
-          <p>Phone Number: </p><a href="tel:2348171187007">+234 817 118 7007</a>
+      <section class="contact" id="contact">
+        <h2>Reach out to me...</h2>
+        <div class="contact-details">
+          <div>
+            <p>Email Address:</p>
+            <a href="mailto:johnafolabi.da@gmail.com"
+              >johnafolabi.da@gmail.com</a
+            >
+            <br />
+            <p>Phone Number:</p>
+            <a href="tel:2348171187007">+234 817 118 7007</a>
+          </div>
+          <form action="">
+            <input type="text" name="fullname" placeholder="Full Name" />
+            <br />
+            <input type="email" name="email" placeholder="Email Address" />
+            <br />
+            <input type="tel" name="fullname" placeholder="Phone Number" />
+            <br />
+            <textarea
+              name="message"
+              placeholder="Your message..."
+              style="height:150px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
         </div>
-        <form action="">
-            <input type="text" name="fullname" placeholder="Full Name">
-            <br>
-            <input type="email" name="email" placeholder="Email Address">
-            <br>
-            <input type="tel" name="fullname" placeholder="Phone Number">
-            <br>
-            <textarea name="message" placeholder="Your message..." style="height:150px"></textarea>
-            <input type="submit" value="Submit">
-        </form>
-      </div>
-    </section>
+      </section>
 
-    <footer>
-      <p> &copy;Copyright - John Afolabi 2019</p>
-    </footer>
-  </div>
-</body>
+      <footer>
+        <p>&copy;Copyright - John Afolabi 2019</p>
+      </footer>
+    </div>
+  </body>
 </html>
